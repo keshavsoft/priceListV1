@@ -2,8 +2,10 @@ import { buildHeader } from "./buildHeader.js";
 import { hookAllListeners } from "./AddListeners/start.js";
 
 const runAfterDomLoad = () => {
-    buildHeader().then(fromPromise => {
-        hookAllListeners();
+    import("../../../script.js").then(fromPromise => {
+        buildHeader().then(fromPromise => {
+            hookAllListeners();
+        });
     });
 };
 
