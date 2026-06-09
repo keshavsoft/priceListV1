@@ -46,5 +46,25 @@
     ]
   },
   "PrimarykeyTableNames": [],
-  "PrimarykeyTables": []
+  "PrimarykeyTables": [],
+  "columnsConfig": [
+    {
+      "columnName": "StockItemName",
+      "title": "StockItemName",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    },
+    {
+      "columnName": "StockBaseUnits",
+      "title": "StockBaseUnits",
+      "cellConfig": {
+        "width": "150px"
+      },
+      "isSearchable": false,
+      "dataListSource": "Dates.Date"
+    }
+  ]
 }
